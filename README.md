@@ -1,5 +1,7 @@
 # Do Notation
 
+[![Build Status](https://travis-ci.org/Risto-Stevcev/do-notation.svg)](https://travis-ci.org/Risto-Stevcev/do-notation)
+
 Do notation for Fantasy Land monad types.
 
 [![Fantasy Land](https://github.com/fantasyland/fantasy-land/raw/master/logo.png)](https://github.com/fantasyland/fantasy-land/)
