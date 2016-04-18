@@ -1,6 +1,7 @@
 # Do Notation
 
 [![Build Status](https://travis-ci.org/Risto-Stevcev/do-notation.svg)](https://travis-ci.org/Risto-Stevcev/do-notation)
+[![Coverage Status](https://coveralls.io/repos/github/Risto-Stevcev/do-notation/badge.svg?branch=master)](https://coveralls.io/github/Risto-Stevcev/do-notation?branch=master)
 
 Do notation for Fantasy Land monad types.
 
