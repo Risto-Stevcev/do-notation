@@ -1,5 +1,5 @@
 'use strict'
-const LazyEither = require('lazy-either').LazyEither
+const LazyEither = require('lazy-either')
     , expect     = require('chai').expect
 
 const S  = require('sanctuary')
