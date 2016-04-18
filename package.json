@@ -4,19 +4,19 @@
   "description": "Do notation for Fantasy Land monad types",
   "main": "index.js",
   "engines": {
-    "node": "4.1.0"
-  },
-  "directories": {
-    "test": "test"
+    "node": "^4.1.0"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
-    "lazy-either": "^1.0.0",
-    "mocha": "^2.4.5",
-    "sanctuary": "^0.9.0"
+    "chai": "3.5.x",
+    "coveralls": "^2.11.x",
+    "istanbul": "0.4.x",
+    "lazy-either": "1.0.x",
+    "mocha": "2.4.x",
+    "sanctuary": "0.9.x"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
   },
   "repository": {
     "type": "git",

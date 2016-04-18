@@ -22,6 +22,23 @@ describe('Do Maybe', function() {
     expect(maybeString).to.equal('Just("bazbarfoo")')
   })
 
+  it('should return the return value if given instead of the last monad value', function() {
+    let maybeString = Do(function*() {
+      let foo = yield S.Maybe.of('foo')
+      expect(foo).to.equal('foo')
+
+      let bar = yield S.Maybe.of('bar' + foo)
+      expect(bar).to.equal('barfoo')
+
+      let baz = yield S.Maybe.of('baz' + bar)
+      expect(baz).to.equal('bazbarfoo')
+
+      return S.Just('norf')
+    }).toString()
+
+    expect(maybeString).to.equal('Just("norf")')
+  })
+
   it('should short circuit execution and return Nothing() toString', function() {
     let maybeString = Do(function*() {
       let foo = yield S.Maybe.of('foo')

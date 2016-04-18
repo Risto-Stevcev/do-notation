@@ -5,7 +5,7 @@ Do = function(generatorFunction) {
     const res = generator.next(v)
 
     if (res.done)
-      return
+      return res.value
     else
       return res.value.chain((v) => next(null, v) || res.value.of(v))
   }()
